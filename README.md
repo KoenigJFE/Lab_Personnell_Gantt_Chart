@@ -1,7 +1,5 @@
-# HillLab_gantt_chart
-This is some basic R code for making the Hill Lab personnel gantt chart.
-We were inspired by https://rpubs.com/mramos/ganttchart
+# Lab_Personnell_Gantt_Chart
+A fork from Dr. Susan Hill's gantt chart. A really fantastic idea.
 
-The chart is updated and posted in our lab every year to track the comings and goings of people. 
-
-The R package is plotrix. The plot generated is pretty basic and so we do a little polishing of the PDF result that we print and post on the lab webpage https://research-groups.usask.ca/hilllab/people.php
+I moved from plotrix to ggplot2 to take advantage of additional customization options. I also chose to import from a csv as I find inputting data to be a little friendlier in excel. 
+If you want to stay entirely in R, Dr. Hill's approach and other forks have clever ways of rapidly assembling the data.
