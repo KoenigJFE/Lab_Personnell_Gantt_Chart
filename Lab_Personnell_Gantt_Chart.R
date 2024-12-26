@@ -89,8 +89,8 @@ ggplot(dt_tidy, aes(y = Person, color = Level)) +
   scale_color_brewer(palette = "Set3") + # Pretty discrete colours.
   scale_y_discrete(limits = rev(levels(dt_tidy$Person))) + # reverses the x axis so the oldest dates are on the top.
   scale_x_date(date_breaks = "1 year", date_labels = "%Y") + # adds additional grid lines.
-  coord_cartesian(xlim = as.Date(c("2020-01-01", "2025-12-31"))) +
-  ggtitle("The Santer Lab") + # title for the plot
+  coord_cartesian(xlim = as.Date(c("2020-01-01", "2025-12-31"))) + # add in prefered date range
+  ggtitle("Lab Name") + # title for the plot
   theme_bw() + # fast way to get a clean plot.
   theme(
     axis.title.x = element_blank(),
